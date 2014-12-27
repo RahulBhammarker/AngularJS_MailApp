@@ -1,0 +1,9 @@
+.center_div{
+    margin: auto;
+    width: 75%
+}
+
+.form-control.ng-invalid.ng-dirty{border: 1px solid red; }
+.form-control.ng-valid.ng-dirty{border: 1px solid green; }
+
+

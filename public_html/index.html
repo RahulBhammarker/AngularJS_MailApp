@@ -2,15 +2,39 @@
 
 <html ng-app="app">
  <head>
-  <title>AngularJS Mail App</title>
+  <title>RB Mail</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+  <link href="css/app.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
+  <div class="row">
+   <div class="col-lg-12">
+    <!--Top Navigation Bar-->
+    <nav class="navbar navbar-default">
+     <div class="container-fluid">
+      <!-- Title Area-->
+      <div class="navbar-header">
+       <a class="navbar-brand" href="#"><b>RB Mail</b></a>
+      </div>
+
+      <!--side buttons-->
+      <div class="collapse navbar-collapse" id="topright_icons">
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="#/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+       </ul>
+      </div><!-- /.navbar-collapse -->
+     </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar -->
+   </div>
+  </div>
   <div ng-view></div>
-  
+  <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
   <script src="js/angular.js" type="text/javascript"></script>
   <script src="js/angular-route.js" type="text/javascript"></script>
   <script src="js/app.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
  </body>
 </html>

@@ -3,7 +3,7 @@ var app = angular.module('app',['ngRoute']);
 app.config(function($routeProvider){
  $routeProvider.when('/',{
   templateUrl:"partials/home.html",
-  controller: 'MyController'
+  controller: 'HomeController'
  })
   .when('/settings',{
    templateUrl:"partials/settings.html",
@@ -12,8 +12,8 @@ app.config(function($routeProvider){
   .otherwise({redirectTo:'/'});
 });
 
-app.controller('MyController',function($scope){
- $scope.name = "mycontroller";
+app.controller('HomeController',function($scope){
+ $scope.name = "Sorry..!! Controller Under Construction";
 });
 
 app.controller('SettingsController',function($scope){
