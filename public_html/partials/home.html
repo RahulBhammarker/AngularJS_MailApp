@@ -1,2 +1,63 @@
-<h1>Home</h1>
-<h2>{{name}}</h2>
+<div class="row" ng-controller="HomeController">
+ <div class="col-sm-4" id="sidebar" ng-controller="MailListingController">
+  <div class="row center_div">
+   <h1>Inbox</h1>
+  </div>  
+  <div class="row center_div">
+   <input type="search" class="form-control" placeholder="Search" ng-model="search"/>
+  </div>  
+  <div class="row">
+   <ul id="emailListing" class="emailListing">
+    <li  ng-repeat="mail in (email| orderBy:'sent_at':true | filter:search)" ng-click="setSelectedMail(mail)">
+     <div class="emailListing" ng-class="{selected: isSelected(mail)}">
+      <div class="col-sm-8"><h4>{{mail.from}}</h4></div>
+      <div class="col-sm-12">{{mail.subject}}</div>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="col-sm-7 mailContent" ng-controller="ContentController">
+  <div ng-show="!selectedMail">
+   <h2>No mail selected..!!</h2>
+  </div>
+  <div class="row" ng-show="selectedMail">
+   <div class="col-sm-12">
+    <div class="row">
+     <div class="col-sm-6"><h4>{{selectedMail.subject}}</h4></div>
+     <div class="col-sm-6"><h6 class="pull-right">{{selectedMail.sent_at| date:'dd/MM/yy'}}</h6></div>
+    </div>
+    <div class="row details">
+     <div class="col-sm-12">
+      from : {{selectedMail.from}}
+      <br/>
+      to : {{selectedMail.to}}
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-sm-12">
+      {{selectedMail.body}}
+     </div>
+    </div>
+    <div class="row replyForm">
+     <div class="col-sm-12">
+      <form id="replyForm" ng-submit="sendEmailReply()" ng-show="showingReply">
+       <div class="row">
+        <div class="col-sm-1 control-label"><label for="email">To:</label></div>
+        <div class="col-sm-11 form-group"><input ng-model="reply.to" name="email" type="email" placeholder=""></div>
+        <div class="col-sm-12 form-group"><textarea cols="80" rows="8" ng-model="reply.body">{{reply.body}}</textarea></div>
+       </div>
+       <button class="btn btn-primary" ng-click="sendReply()">Send</button>
+       <button class="btn btn-danger" ng-click="toggleReplyForm()">Cancel</button>
+      </form>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-sm-1 pull-left">
+      <a class="btn btn-primary form-group-sm" ng-hide="showingReply" ng-click="toggleReplyForm()">Reply</a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

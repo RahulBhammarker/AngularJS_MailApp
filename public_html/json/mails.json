@@ -1,0 +1,58 @@
+[
+  {
+    "id":"1",
+    "from":"abc@gmail.com",
+    "to":"def@gmail.com",
+    "subject":"Subject of the mail will go here..!!",
+    "sent_at":"2014-03-02T23:28:56.782Z",
+    "body":"this is the body of the mail"
+  },
+  {
+    "id":"2",
+    "from":"amir@gmail.com",
+    "to":"hritik@gmail.com",
+    "subject":"Subject of id 2",
+    "sent_at":"2014-02-03T22:28:56.782Z",
+    "body":"this is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mailthis is the body of the mail"
+  },
+  {
+    "id":"3",
+    "from":"sharukh@gmail.com",
+    "to":"deepak@gmail.com",
+    "subject":"Subject of id 3",
+    "sent_at":"2014-05-03T21:28:56.782Z",
+    "body":"this is the body of the mail"
+  },
+  {
+    "id":"4",
+    "from":"mno@gmail.com",
+    "to":"pqrst@gmail.com",
+    "subject":"Subject of id 4",
+    "sent_at":"2013-05-03T21:28:56.782Z",
+    "body":"this is the body of the mail"
+  },
+  {
+    "id":"5",
+    "from":"manoj@gmail.com",
+    "to":"amir@gmail.com",
+    "subject":"Subject of id 5",
+    "sent_at":"2012-05-03T21:28:56.782Z",
+    "body":"this is the body of the mail"
+  },
+  {
+    "id":"6",
+    "from":"ramesh@gmail.com",
+    "to":"suresh@gmail.com",
+    "subject":"Subject of id 6",
+    "sent_at":"2011-05-03T21:28:56.782Z",
+    "body":"this is the body of the mail"
+  },
+  {
+    "id":"7",
+    "from":"deepak@gmail.com",
+    "to":"sunil@gmail.com",
+    "subject":"Subject of id 7",
+    "sent_at":"2010-05-03T21:28:56.782Z",
+    "body":"this is the body of the mail"
+  }
+]
